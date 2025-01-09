@@ -1,0 +1,1 @@
+Caso precise utilizar as views, basta devolver essa pasta pra raíz, e utilizar os métodos do Handlebars para renderização - deixei um exemplo em algum canto, boa busca.
