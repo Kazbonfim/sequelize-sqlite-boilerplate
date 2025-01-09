@@ -14,10 +14,10 @@ npm start // Vai rodar o servidor Express, criar o arquivo .db na raíz, e em se
 É isso. É um projeto bem simples, no intuito de realmente reutilizar esses recursos quando forem necessários, sem ter que ficar recorrendo á documentação, IA ou qualquer outro recurso externos - que convenhamos, se torna chato, e as vezes limitante. Testei algumas vezes, não encontrei bugs; recomendo que, caso não tenha um front, só queira entender como funciona requisições e respostas, baixe e instancie, e vá testando tudo no Postaman.
 Um exemplo de requisição seria...
 
-Postaman: 
+Postman: 
 ![image](https://github.com/user-attachments/assets/1bc059ce-8988-481e-ace5-c5464ae32891)
 Rota de criação de usuários: POST | http://localhost:3000/users
-Body > 
+Body: 
 ```
 {
   "name": "Teste",
@@ -25,5 +25,6 @@ Body >
 }
 ```
 Retorno esperado: res(200), de sucesso na inserção ou interação com o algoritmo.
+Você pode usar o Thunderclient direto no VCS também, basta instalar ele, e seguir os mesmos passos
 
 ## That's all folks! Dúvidas? Só ir em ISSUES, e abrir uma, respondo em breve, prometo.

@@ -4,7 +4,7 @@ const User = require('../models/User');
 const syncDataBase = async () => {
     try {
         await sequelize.sync({
-            force: true // Apaga os dados sempre que o servidor for iniciado, use com cautela
+            //force: true // Apaga os dados sempre que o servidor for iniciado, use com cautela
         })
         console.log('Bando de dados sincronizado com sucesso');
     } catch (error) {
