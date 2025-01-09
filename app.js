@@ -12,6 +12,7 @@ const indexRouter = require('./routes/index');
 
 const app = express();
 
+// Melhoria pra produção
 // (async () => {
 //   if (process.env.NODE_ENV !== 'production') { // Executa apenas fora de produção
 //     console.log('Sincronizando banco e inserindo dados de teste...');
@@ -23,9 +24,9 @@ const app = express();
 
 //Executar em ordem
 syncDatabase();
-(async () => {
-  await testDatabase('teste', 'teste@teste.com');
-})
+// (async () => {
+//   await testDatabase('teste', 'teste@teste.com');
+// })
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
