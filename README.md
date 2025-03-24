@@ -1,6 +1,9 @@
 # Sobre
 Este boilerplate fornece a estrutura essencial para conectar, modelar e interagir com um banco SQLite de forma simples e eficiente, utilizando o Sequelize para manipulação de dados. Ideal para protótipos rápidos ou projetos pequenos, sem a necessidade de configurar bancos mais complexos.
 
+## Novidades!
+Adicionado suporte para mySql; em breve, a api de manipulação de dados estará integrada para mySql também, dando mais maleabilidade no futuro para o Boilerplate ser mais adaptativo, conforme necessidades, e contextos de projeto.
+
 ## Como usar?
 ```
 git clone <URL> // Clonar esse rep.
@@ -15,6 +18,7 @@ npm start // Vai rodar o servidor Express, criar o arquivo .db na raíz, e em se
 Um exemplo de requisição seria...
 
 Postman: 
+
 ![image](https://github.com/user-attachments/assets/1bc059ce-8988-481e-ace5-c5464ae32891)
 Rota de criação de usuários: POST | http://localhost:3000/users
 Body: 
