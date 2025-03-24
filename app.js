@@ -3,9 +3,10 @@ const express = require('express');
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
-const helmet = require('helmet')
-const syncDatabase = require('./scripts/syncDatabase')
-const testDatabase = require('./scripts/testDatabase')
+const helmet = require('helmet');
+const syncDatabase = require('./scripts/sqliteSyncDatabase');
+const testDatabase = require('./scripts/sqliteSyncTest');
+const mysqlDatabase = require('./scripts/mysqlSyncDatabase');
 
 
 const indexRouter = require('./routes/index');
@@ -24,6 +25,7 @@ const app = express();
 
 //Executar em ordem
 syncDatabase();
+mysqlDatabase();
 // (async () => {
 //   await testDatabase('teste', 'teste@teste.com');
 // })

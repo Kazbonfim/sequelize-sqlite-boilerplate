@@ -1,16 +1,20 @@
 const { DataTypes } = require('sequelize');
-const sequelize = require('../database/database');
+const sequelizeSqlite = require('../database/sqlite_database');
+const { sequelize: sequelizeMysql } = require('../database/mysql_database');
 
-const User = sequelize.define('User', {
+const user = {
     name: {
         type: DataTypes.STRING,
         allowNull: false,
     },
     email: {
         type: DataTypes.STRING,
-        unique: true,
         allowNull: false,
+        unique: true,
     }
-});
+};
 
-module.exports = User;
+const UserSqlite = sequelizeSqlite.define('User', user);
+const UserMysql = sequelizeMysql.define('User', user);
+
+module.exports = { UserSqlite, UserMysql };
